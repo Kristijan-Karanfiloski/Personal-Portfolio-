@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+:root {
+  --body: black;
+  --heading: red;
+  --sidebar-width: 240px;
+  --font-family: "Poppins";
+}
+
+body {
+  background-color: var(--body);
+  color: white;
+  font-family: var(--font-family), sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: white;
+  font-weight: 700;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  transition: all 0.4s ease;
+}
+
+a:hover {
+  color: orange;
+}
+
+img {
+  width: 100%;
+}
+
+.full-height {
+  min-height: 100vh;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  border-bottom: 0.5px solid whitesmoke;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* NVIGATION BAR */
+
+@media (min-width: 992px) {
+  .navbar {
+    min-height: 100vh;
+    width: var(--sidebar-width);
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(2, 2, 2, 0.7)),
+      url("/assets/images/side-bar.avif");
+    background-size: cover;
+    background-position: center;
+  }
+  .navbar-brand img {
+    border: 3px solid rgb(8, 8, 8);
+  }
+
+  /* CONTENT WRAPER */
+
+  #content-wraper {
+    padding-left: var(--sidebar-width);
+  }
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.navbar {
+  background: black;
+  padding-left: 1rem;
+  padding-right: 8rem;
+  color: gray;
+}
+
+.navbar .nav-link {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: white;
+}
+
+.navbar .nav-link:hover {
+  color: orange;
+}
+
+.navbar .nav-link.active {
+  color: orange;
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* HOME SECTION */
+#home {
+  background: url("/assets/images/black-1.avif");
+  background-size: cover;
+}
+
+.link-custom {
+  color: white;
+}
+
+#home a:hover {
+  color: white;
+}
+
+#home span {
+  color: orange;
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ABOUT SECTION */
+
+.text-orange {
+  color: orange;
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////// */
+/* PROJECTS */
+#projects {
+  font-size: 26px;
+}
+
+#projects h4 {
+  color: orange;
+  text-transform: uppercase;
+}
+
+#projects p {
+  text-transform: uppercase;
+}
+
+#project > i:hover {
+  color: red;
+}
+
+#project .la-github {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: red;
+}
+
+.card-custom-content {
+  background: #18181b;
+}
+
+/* HELPER CLASS FOR ICONBOX */
+
+.project-box {
+  background-image: url("/assets/images/black-2.avif");
+  background-size: cover;
+  background-position: center;
+}
+
+.git-hub {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  background-color: white;
+  color: red;
+}
+
+.git-hub > a {
+  color: red;
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////// */
+/* CONTACT */
+
+#contact h4 {
+  color: orange;
+}
+
+#contact label {
+  color: orange;
+}
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.popup-wrapper {
+  background: rgb(28, 28, 29);
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  width: 100%;
+  display: none;
+}
+
+.popup {
+  margin: 10% auto;
+  padding: 20px;
+  position: relative;
+}
+
+.cv {
+  height: 550px;
+  width: 100%;
+}
+
+.cv-heading {
+  color: white;
+}
+
+.popup-close {
+  color: orange;
+  cursor: pointer;
+}
