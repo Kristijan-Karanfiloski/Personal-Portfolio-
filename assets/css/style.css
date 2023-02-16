@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
 
+* {
+  /* background-color: red; */
+}
 :root {
   --body: black;
   --heading: red;
@@ -44,45 +47,22 @@ img {
 
 .full-height {
   min-height: 100vh;
-  height: 100%;
+  /* height: 100%; */
+  /* width: 100%; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-top: 80px;
   padding-bottom: 80px;
-  border-bottom: 0.5px solid whitesmoke;
+  border-bottom: 0.5px solid gray;
 }
 
 /* /////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 /* NVIGATION BAR */
 
-@media (min-width: 992px) {
-  .navbar {
-    min-height: 100vh;
-    width: var(--sidebar-width);
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(2, 2, 2, 0.7)),
-      url("/assets/images/side-bar.avif");
-    background-size: cover;
-    background-position: center;
-  }
-  .navbar-brand img {
-    border: 3px solid rgb(8, 8, 8);
-  }
-
-  /* CONTENT WRAPER */
-
-  #content-wraper {
-    padding-left: var(--sidebar-width);
-  }
-}
-
-/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
-
 .navbar {
   background: black;
-  padding-left: 1rem;
-  padding-right: 8rem;
   color: gray;
 }
 
@@ -103,15 +83,10 @@ img {
 /* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 /* HOME SECTION */
 #home {
-  background: url("/assets/images/black-1.avif");
-  background-size: cover;
+  background: black;
 }
 
 .link-custom {
-  color: white;
-}
-
-#home a:hover {
   color: white;
 }
 
@@ -192,6 +167,8 @@ img {
   color: orange;
 }
 /* ///////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 .popup-wrapper {
   background: rgb(28, 28, 29);

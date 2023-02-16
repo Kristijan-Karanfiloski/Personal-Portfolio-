@@ -18,17 +18,13 @@
     <script defer src="./assets/js/aos.js"></script>
     <script defer src="./assets/js/app.js"></script>
   </head>
-  <body data-bs-spy="scroll" data-bs-target=".navbar"></body>>
+  <body data-bs-spy="scroll" data-bs-target=".navbar"></body>
     <!-- NAVBAR--START -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-      <div class="container flex-lg-column">
-        <a class="navbar-brand mb-lg-4 mx-lg-auto" href="#">
-          <span class="h3 fw-bold d-block d-lg-none">Kristijan</span>
-          <img
-            src="./assets/images/personal.png"
-            class="d-none d-lg-block rounded-circle"
-            alt=""
-          />
+    <nav class="navbar navbar-expand-md ps-xxl-5 pe-xxl-5  navbar-dark fixed-top   ">
+      <div class="container-fluid ">
+        <a class="navbar-brand" href="#">
+          <span class="fw  h3">Kristijan</span>
+         
         </a>
         <button
           class="navbar-toggler"
@@ -42,7 +38,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto flex-lg-column text-lg-center">
+          <ul class="navbar-nav ms-auto ">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
@@ -62,9 +58,9 @@
     <!-- NAVBAR-END -->
 
     <!-- PROJECTS -->
-    <div id="content-wraper">
+    <div id="content-wraper" class="container-fluid">
       <!-- HOME SECTION START -->
-      <section id="home" class="full-height bg-dark px-lg-5">
+      <section id="home" class="full-height ">
         <div class="container">
           <div class="row">
             <div class="col-lg-8 ps-4">
@@ -72,10 +68,15 @@
                 Hi, <span>I'm </span> Kristijan <span> Karanfiloski</span>
               </h1>
               <p class="lead" data-aos="fade-up">a front-end dev</p>
-              <button id="btn-cv" class="btn btn-danger" data-aos="fade-up">
-                <a href="file:///C:/Users/kikac/OneDrive/Desktop/Kristijan_Karanfiloski_-_Frontend_Developer_InternJunior.pdf" class="link-custom " >resume/cv</a>
-                
-              </button>
+           
+             
+            </div>
+            <div class="col p-md-5">
+                   <img
+              src="./assets/images/personal.png"
+              class=" rounded-circle mt-5"
+              alt=""
+            />
             </div>
           </div>
         </div>
@@ -84,7 +85,7 @@
 
       <!-- ABOUT SECTION START -->
 
-      <section id="about" class="full-height px-lg-5">
+      <section id="about" class="full-height">
         <div class="container">
           <div class="row">
             <div class="col-lg-8">
@@ -105,7 +106,24 @@
             </div>
           </div>
         </div>
+        <div class="container popup-wrapper ">
+         <div class="row popup ">
+           <!-- <div class="popup-content"> -->
+             <h4 class="cv-heading">RESUME/CV</h4>
+              <h4 class="popup-close">Close</h4>
+             
+
+          
+             <div class="embed-responsive embed-responsive-16by9">
+               <iframe class="embed-responsive-item cv" src="/assets/Kristijan_Karanfiloski_-_Frontend_Developer_InternJunior.pdf" allowfullscreen></iframe>
+             </div>
+       
+         <!-- </div> -->
+       </div>
+     </div>
       </section>
+      <!--  -->
+     
 
       <!-- ABOUT SECTION END -->
 
@@ -117,7 +135,7 @@
             <!-- PROJECT 1 START -->
 
             <div class="col-lg-6 mb-3">
-                <div class="card-custom rounded-top-2 " data-aos="fade-down">
+                <div class="card-custom rounded-top-2 " data-aos="fade-up">
                   <div class="card-custom-image rounded-top-2">
                     <img class="" src="/assets/images/drum-kit.jpg" alt="" />
                   </div>
@@ -137,7 +155,7 @@
               <!-- PREOJECT 2 START -->
 
               <div class="col-lg-6 mb-3">
-                <div class="card-custom rounded-top-2" data-aos="fade-down">
+                <div class="card-custom rounded-top-2" data-aos="fade-up">
                   <div class="card-custom-image rounded-top-2">
                     <img class="" src="/assets/images/drum-kit.jpg" alt="" />
                   </div>
@@ -215,7 +233,7 @@
         <div class="container">
           <div class="row gx-5 py-2 px-2">
             <!-- left side -->
-            <div class="col-lg-5 py-3 px-3"data-aos="fade-right">
+            <div class="col-lg-5 py-3 px-3"data-aos="fade-up">
               <div class="info">
                 <div class="address">
                   <i class="bi bi-geo-alt-fill"></i>
@@ -244,7 +262,7 @@
             </div>
 
             <!-- Right side -->
-            <div class="col-lg-7 mt-5 p-3" data-aos="fade-left">
+            <div class="col-lg-7 mt-5 p-3" data-aos="fade-up">
               <form action="" class="email-form" role="form">
                 <div class="row">
                   <div class="form-group col-md-6">
@@ -303,6 +321,7 @@
       <!-- CONTACT SECTION END -->
 
       <!-- FOOTER SECTION START -->
+      
       <footer class="footer p-2 text-center text-white">
         <!-- Grid container -->
         <div class="container p-4 pb-0">
@@ -350,25 +369,7 @@
           <!-- Section: Social media -->
         </div>
       </footer>
-
-      <section class="text-center  full-height">
-        <div class="container popup-wrapper
-         ">
-          <div class="row popup ">
-            <!-- <div class="popup-content"> -->
-              <h4 class="cv-heading">RESUME/CV</h4>
-               <h4 class="popup-close">Close</h4>
-              
-
-           
-              <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item cv" src="/assets/Kristijan_Karanfiloski_-_Frontend_Developer_InternJunior.pdf" allowfullscreen></iframe>
-              </div>
-        
-          <!-- </div> -->
-        </div>
-      </div>
-    </section>
+    
     </div>
   </body>
 </html>

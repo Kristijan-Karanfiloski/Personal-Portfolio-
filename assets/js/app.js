@@ -12,21 +12,3 @@ AOS.init({
   mirror: false, // whether elements should animate out while scrolling past them
   anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
 });
-
-const cvBtn = document.querySelector("#btn-cv");
-const popup = document.querySelector(".popup-wrapper");
-const closeBtn = document.querySelector(".popup-close");
-const aboutSec = document.querySelector("#content-wraper");
-const nav = document.querySelector(".navbar");
-
-cvBtn.addEventListener("click", () => {
-  popup.style.display = "block";
-});
-
-closeBtn.addEventListener("click", () => {
-  popup.style.display = "none";
-});
-
-popup.addEventListener("click", () => {
-  popup.style.display = "none";
-});
